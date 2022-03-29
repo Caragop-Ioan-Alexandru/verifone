@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=M+PLUS+Rounded+1c:wght@400;800&display=swap");
+/*
+  reset
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background-color: #f8f9fb;
+  height: 100%;
+}
+
+html h6,
+body h6 {
+  margin: 0;
+}
+
+html .btn,
+body .btn {
+  background-color: #1bb43f;
+  color: white;
+  font-weight: bold;
+}
+
+html .btn:hover,
+body .btn:hover {
+  background-color: #2fc152;
+  color: white;
+}
+
+html .main-heading:after,
+body .main-heading:after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  width: 70px;
+  height: 3px;
+  background: #3490e5;
+}
+
+html .products-container,
+body .products-container {
+  height: 230px;
+}
+
+html .products-container .product,
+body .products-container .product {
+  background-color: white;
+  border: 1px solid #0000001a;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+html .products-container .product .text-container > span,
+body .products-container .product .text-container > span {
+  font-size: 14px;
+}
+
+html .products-container .product .price,
+body .products-container .product .price {
+  color: #3490e5;
+}
+
+html .products-container .product .btn,
+body .products-container .product .btn {
+  font-size: 14px;
+  width: 200px;
+}
+
+html .products-container .product .btn svg,
+body .products-container .product .btn svg {
+  fill: white;
+  margin-right: 5px;
+}
+
+html .shopping-cart,
+body .shopping-cart {
+  background-color: #f0f3f8;
+}
+
+html .shopping-cart h6,
+body .shopping-cart h6 {
+  position: relative;
+}
+
+html .shopping-cart h6 .bi-info,
+body .shopping-cart h6 .bi-info {
+  position: relative;
+  background-color: #bdc1ca;
+  color: white;
+  border-radius: 50%;
+  top: -1px;
+}
+
+html .shopping-cart h6 g:hover .pop-up,
+body .shopping-cart h6 g:hover .pop-up {
+  display: block;
+}
+
+html .shopping-cart h6 .pop-up,
+body .shopping-cart h6 .pop-up {
+  display: none;
+  font-weight: normal;
+  background-color: white;
+  position: absolute;
+  top: -10px;
+  left: 80%;
+  min-width: 250px;
+  padding: 10px;
+  z-index: 1;
+}
+
+html .shopping-cart h6 .pop-up .arrow-left,
+body .shopping-cart h6 .pop-up .arrow-left {
+  top: 10px;
+  left: -10px;
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white;
+}
+
+html .shopping-cart .products-hr,
+body .shopping-cart .products-hr {
+  height: 1px;
+  background-color: #a5a9b4;
+  margin-top: 10px;
+}
+
+html .shopping-cart .total-hr,
+body .shopping-cart .total-hr {
+  border-top: 2px solid black;
+  opacity: 1;
+}
+
+html .shopping-cart .btn,
+body .shopping-cart .btn {
+  background-color: #2fc152;
+}
+
+html .shopping-cart .btn:hover,
+body .shopping-cart .btn:hover {
+  background-color: #1bb43f;
+}
+
+@media (max-width: 540px) {
+  body {
+    font-size: 12px;
+  }
+  body .products-container {
+    min-height: 500px;
+    margin-bottom: 10px;
+  }
+  body .products-container .product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 150px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .products-container .product .text-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 100px;
+  }
+  body .shopping-cart {
+    margin: 0;
+    padding: 0 !important;
+  }
+  body .title-row .col-4.col-lg-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+  }
+  div.col-lg-3.col-3 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+  .form-group {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
